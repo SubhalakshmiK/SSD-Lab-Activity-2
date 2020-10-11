@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: linear-gradient(to right, purple, Orange);
+    font-family: red serif;
+    border: 1px solid Orange;
+    transition: all 0.3s ease;
+    
+}
+
+
+.logo { 
+    color: rgb(0, 255, 255);
+    font-size: 35px;
+    font-weight: 1000;
+    letter-spacing: 1px;   
+    flex-basis: 20%;
+    text-transform: uppercase;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+  
+}
+
+.nav-links a{
+    color: Blue;
+    font-size: 1.4em;
+    font-weight: 800;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    
+  
+}
+
+.nav-links li a:hover {
+    color: White;  
+}
+
+.nav-links-button{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links-button div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(229, 255, 229);
+    margin: 5px;
+    
+}
+
+@media screen and (max-width: 1024px){
+  .nav-links{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+      overflow-x: hidden;
+
+  }
+  .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #80ff80; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+      opacity: 0;
+    
+  }
+  .nav-links-button{
+      display: block;
+  }
+}
+
+.nav-active{
+      transform: translate(0%);
+  
+}
+
+@heyframes navLinkFade {
+  from{
+      opacity: 0;
+      transform: translateX(50px);  
+    
+  }
+  to{
+      opacity: 1;
+      transform: translate(0px);
+    
+  }
+}
+
+/*.boxed {
+  border: 1px solid green ;
+}*/
+
+body
+{
+     background: white;
+     padding:0;
+     margin:0;
+}
+
+.container {
+     width: 400px;
+     height: 450px;
+     margin: 100px auto;
+     background: orange;
+     position: relative;
+     align-items: right;
+     float: left;
+     border: 7px solid Orange;
+  
+}
+
+.container1 {
+     width: 1420px;
+     height: 450px;
+     background: lightblue;
+     position: sticky;
+     align-items: left;
+     float: left;
+     margin-right: 10px;
+     margin-top: 100px;
+     border: 10px solid Orange;
+  
+}
+
+.container2 {
+     width: 400px;
+     height: 250px;
+     background: lightblue;
+     position: relative;
+     align-items: right;
+     float: left;
+     margin-left: 100px;
+     margin-top: 100px;
+     border: 5px solid orange;
+  
+}
+
+.container3 {
+     width: 400px;
+     height: 250px;
+     background: lightblue;
+     position: relative;
+     align-items: right;
+     float: left;
+     margin-left: 25px;
+     margin-top: 100px;
+     border: 5px solid orange;
+}
+
+.container4 {
+     width: 400px;
+     height: 250px;
+     background: lightblue;
+     position: relative;
+     align-items: right;
+     float: left;
+     margin-left: 25px;
+     margin-top: 100px;
+     border: 5px solid orange;
+}
+
+
+.container5 {
+     width: 400px;
+     height: 250px;
+     background: lightblue;
+     position: relative;
+     align-items: right;
+     float: left;
+     margin-left: 25px;
+     margin-top: 100px;
+     border: 5px solid orange;
+}
+
+
+.container6 {
+     width: 200px;
+     height: 250px;
+     background: lightblue;
+     position: sticky;
+     align-items: center;
+     float: left;
+     margin-left: 100px;
+     margin-top: 10px;
+     border: 5px solid orange;
+     padding: 1rem;
+  
+}
+
+
+.container7
+{
+     width: 1400px;
+     height: 250px;
+     position: sticky;
+     align-items: left;
+     float: left;
+     margin-right: 100px;
+     margin-top: 10px;
+     border: 5px solid orange;
+     padding: 1rem;
+     position: relative;
+     background: linear-gradient(to right, white, orange, blue);
+     padding: 30px;
+  
+}
+
+.container h1 {
+     margin:0;
+     padding:0;
+     font-family: arial;
+     font-size;
+     text-transform: uppercase;
+     text-align: center;
+     position: relative;
+     top: 50%;
+     color: purple;
+     transform: translateY(-100);
+  
+       
+       
+}
+
+.container .box {
+     position: relative;
+     width: calc(400px - 30px);
+     height: calc(400px - 30px);
+     background: #ff0;
+     float: right;
+     margin: 15px;
+  
+}
+
+
+li1 {
+ list-style-Type: none;
+ padding: 0 0 4px 23px;
+ background: url(https://www.computerhope.com/cdn/arrow.png) no-repeat left center;
+ font-familiy: Comic Sans MS, Comic Sans, cursive;
+ font-size:25px;
+ font-style:italic;
+}
+  
+.home {
+    /*display: flex;
+    background: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg") no-repeat;
+    height: 100vh;
+    color: White;
+    min-height: 250px;
+    width: 1800px auto;
+    font-family: sans-serif;*/
+    display: flex;
+    background: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg") no-repeat center;
+    height: 100vh;
+    color: White;
+    min-height: 500px;
+    font-family: sans-serif;
+    flex-basis: 200%; 
+    background-size: contain;
+    border: 1px solid Blue;
+    text-align: center;
+    
+    
+}
+
+
+.home .max-width {
+    margin: auto 10px auto 900px;
+    text-align: center;
+  
+}
+
+.home .home-content .text-1 {
+    font-size: 35px;
+    text-align: left;
+    position: relative;
+    color: yellow;
+    font-weight: 800;
+   
+  
+}
+  
+.home .home-content .text-2 {
+    font-size: 75px;
+    position: relative;
+    text-align: left;
+    color: White;
+    font-weight: 800;
+}
+
+.home .home-content .text-3 {
+    font-size: 35px;
+    margin: 0px 0;
+    position: relative;
+    text-align: center;
+    color: yellow;
+  
+}
+
+.home .home-content .text-3 span {
+    color: HotPink;
+    font-weight: 1000;
+}
